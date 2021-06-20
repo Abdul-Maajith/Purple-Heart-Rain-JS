@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    margin: 0px;
+    min-height: 100vh;
+    font-family: Poppins;
+}
+
+/* The animation-fill-mode (forward) property specifies a style for the element when the animation is not playing (before it starts, after it ends, or both). */
+
+.heart {
+    animation: fall 3s linear forwards ;
+    top: -1vh;
+    position: fixed;
+    transform:translateY(0);
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
